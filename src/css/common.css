@@ -139,6 +139,7 @@ body {
 .image-gallery-image img {
   width: auto;
   height: 500px;
+  margin-left: 14%;
 }
 
 .form-group {
@@ -156,7 +157,7 @@ body {
 }
 
 .gallery-item:first-child {
-  border-top: 1 solid #eee;
+  border-top: 1px solid #eee;
 }
 
 .gallery-item.active {

@@ -35,12 +35,20 @@ export default class Gallery extends Component {
             <h1>Our Gallery</h1>
             <hr/>
         </div>
-        <div className="container-fluid" style={{background: 'white', padding: '0', maxHeight: '500px', borderTop: '1px solid #eee'}}>
-          <div className="col-md-4 col-sm-4 col-xs-4" style={{padding: '0px'}}>
-              {Object.keys(images).map((folder,index) =>
-                <div onClick={e => this.changeCategory(index)} className={"gallery-item" + (index === currentCategoryIndex ? " active" : "")} key={folder}>{folder}</div>)}
+        <div className="container-fluid" style={{background: 'white', padding: '0', maxHeight: '500px'}}>
+          <div className="col-md-4 col-sm-4 col-xs-12" style={{padding: '0px'}}>
+              <div className="hidden-xs">
+                {Object.keys(images).map((folder,index) =>
+                  <div onClick={e => this.changeCategory(index)} className={"gallery-item" + (index === currentCategoryIndex ? " active" : "")} key={folder}>{folder}</div>)}
+              </div>
+              <div className="visible-xs" style={{margin: '16px'}}>
+                <h4>Choose a category:</h4>
+                <select className="form-control" value={currentCategoryIndex} onChange={e => this.changeCategory(e.target.value)}>
+                  {Object.keys(images).map((folder,index) => <option value={index} key={index}>{folder}</option>)}
+                </select>
+              </div>
           </div>
-          <div className="col-md-8 col-sm-8 col-xs-8" style={{margin: '0px', background: '#eee'}}>
+          <div className="col-md-8 col-sm-8 col-xs-12" style={{margin: '0px', background: '#eee'}}>
             <ImageGallery items={images[Object.keys(images)[currentCategoryIndex]]}
               infinite={true}
               showPlayButton={false}
