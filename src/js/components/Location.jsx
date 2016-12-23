@@ -7,8 +7,8 @@ import '../../css/location.css';
 
 export default class Location extends Component {
   render() {
-    const email = "test@test.com",
-          phone = "416-777-777";
+    const email = "viarbox@yahoo.ca",
+          phone = "416-272-4854";
     return (
       <div className="container">
         <Header/>
@@ -18,10 +18,10 @@ export default class Location extends Component {
           <h4>Other Ways</h4>
           <IconText icon="map-marker">
             <address>
-            17600 Yonge St,<br/>
-            Newmarket ON,<br/>
-            L3Y 4Z1<br/>
-            Canada
+            191 Bowes Road,<br/>
+            Unit 3 &amp; 4,<br/>
+            Concord ON,<br/>
+            L4K 1H9
             </address>
           </IconText>
           <IconText icon="envelope">
@@ -32,7 +32,7 @@ export default class Location extends Component {
           </IconText>
         </div>
         <div className="location-map">
-          <Map location="17600 Yonge St, Newmarket ON, L3Y 4Z1"/>
+          <Map location="191 Bowes Road Unit 3 and 4 Concord ON L4K 1H9"/>
         </div>
       </div>
     );

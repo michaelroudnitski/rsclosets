@@ -36,6 +36,16 @@
   animation: spin-in 500ms 1 ease-in-out;
 }
 
+.quote-container {
+  padding-top: 5%;
+}
+
+@media (max-width: 768px) {
+  .quote-container {
+    padding-top: 10%;
+    padding-bottom: 15%;
+  }
+}
 
 .estimate-container {
   background: #795548;
