@@ -6,7 +6,7 @@ export default class Map extends Component {
     this.setState({ frameLoaded: false });
     this.checkInterval = setInterval(() => {
       try {
-        document.querySelector('iframe').contentDocument;
+        if(document.querySelector('iframe').contentDocument) { return; }
       } catch(ex) {
         clearInterval(this.checkInterval);
         setTimeout(() => this.setState({ frameLoaded: true }), 250);
