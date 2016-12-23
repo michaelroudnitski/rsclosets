@@ -10,7 +10,6 @@ export default class NavBar extends Component {
         <div className='nav-right'>
           <Link className={pathname === '/gallery' ? 'active' : ''} to='/gallery'>Gallery</Link>
           <Link className={pathname === '/quote' ? 'active' : ''} to='/quote'>Quote</Link>
-          <Link className={pathname === '/about-us' ? 'active' : ''} to='/about-us'>About Us</Link>
           <Link className={pathname === '/contact-us' ? 'active' : ''} to='/contact-us'>Contact Us</Link>
         </div>
       </nav>
