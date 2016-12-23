@@ -1,0 +1,25 @@
+.location-info {
+  background: white;
+  color: #212121;
+  height: 700px;
+  width: 30%;
+  float: right;
+  padding: 16px;
+}
+
+.location-map {
+  float: left;
+  width: 70%;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .location-info,
+  .location-map {
+    width: 100%;
+  }
+
+  .location-map {
+    padding: 16px;
+  }
+}

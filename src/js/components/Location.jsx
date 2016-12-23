@@ -3,6 +3,7 @@ import Header from './Header';
 import Map from './Map';
 import IconText from './IconText';
 import Hours from './Hours';
+import '../../css/location.css';
 
 export default class Location extends Component {
   render() {
@@ -11,7 +12,7 @@ export default class Location extends Component {
     return (
       <div className="container">
         <Header/>
-        <div className="text-center" style={{background: 'white', color: '#212121', height: '700px', width: '30%', float: 'right', padding: '16px'}}>
+        <div className="location-info text-center">
           <Hours/>
           <hr/>
           <h4>Other Ways</h4>
@@ -30,7 +31,7 @@ export default class Location extends Component {
             <a href={`tel:${phone}`}>{phone}</a>
           </IconText>
         </div>
-        <div style={{float: 'left', width: '70%'}}>
+        <div className="location-map">
           <Map location="17600 Yonge St, Newmarket ON, L3Y 4Z1"/>
         </div>
       </div>
