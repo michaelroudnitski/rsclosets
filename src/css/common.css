@@ -142,9 +142,16 @@ body {
   opacity: 0.75;
 }
 
+.image-gallery-image {
+  height: 500px;
+}
+
 .image-gallery-image img {
   width: auto;
-  height: 500px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .form-group {
