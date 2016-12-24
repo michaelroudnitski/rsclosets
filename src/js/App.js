@@ -47,11 +47,7 @@ export default class App extends Component {
               <li>Free no obligations estimate</li>
               <li>Custom design to fit your needs</li>
               <li>Professional installation</li>
-              <li>Professional installation</li>
-              <li>Professional installation</li>
-              <li>Professional installation</li>
-              <li>Professional installation</li>
-              <li>Professional installation</li>
+              <li>Parts & maintenance warranty</li>
             </ul>
           </div>
           <div className="col-md-7 col-sm-7 col-xs-12">
