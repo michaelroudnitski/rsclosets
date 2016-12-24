@@ -10,7 +10,7 @@ export default class App extends Component {
         <Header/>
         <div className="container-fluid padded-container text-center">
           <div className="col-md-12 col-sm-12 col-xs-12">
-            <h2>Organize Your Space and Enjoy!</h2>
+            <h2>Organize Your Space and Give It Lasting Value!</h2>
             <hr/>
             <p>Custom closets and wall units will help you to fully utilize your space. We offer an assortment of options in maximizing every square foot of your bedroom, walk-in closet, laundry room, basement or office. </p>
             <p>We will be with you every step of the way, to aid you in optimizing your options and reaching a decision that will allow you to fully utilize your space.  No matter how small or spacious your room, our custom shelving and organizing will make it functional based on your custom needs and budget. Whatever your needs, we will figure out how best to store all your belongings.</p>
