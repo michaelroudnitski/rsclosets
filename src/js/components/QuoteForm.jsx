@@ -18,7 +18,7 @@ export default class QuoteForm extends Component {
     event.preventDefault();
     const { email, fullName, phoneNumber, _gotcha } = event.target;
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://formspree.io/nuzugenode@fulvie.com', true);
+    xhr.open('POST', 'https://formspree.io/viarbox@yahoo.ca', true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.setRequestHeader('Accept', 'application/json');
     xhr.onreadystatechange = () => {
