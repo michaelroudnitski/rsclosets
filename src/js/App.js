@@ -31,25 +31,15 @@ export default class App extends Component {
         </div>
         <div className="col-md-12 col-sm-12 col-xs-12 padded-container">
           <div className="col-md-6 col-sm-6 col-xs-12">
-            <img className="main-image" src="/images/smartline.jpg" role="presentation"/>
+            <img className="main-image" src="/images/custom.jpg" role="presentation"/>
           </div>
-          <div className="col-md-6 col-sm-6 col-xs-12">
-            <h3>The SmartLine Closet</h3>
-            <hr/>
-            <p>The SmartLine is a wall-mounted system, which leaves floor space clear and offers a clean, modern look. This option offers flexibility through adjustable shelves and hanging bars. Leaving you with the ability to easily change your organized space as your needs change, thus it is ideal for children or young adults.</p>
-          </div>
-        </div>
-        <div className="col-md-12 col-sm-12 col-xs-12 padded-container">
           <div className="col-md-6 col-sm-6 col-xs-12">
             <h3>Custom Cabinetry</h3>
             <hr/>
             <p>In addition to closets, we offer custom cabinetry. This is a great option for large walk-in closets and dressing rooms. Choose from a wide array of styles, colours and accessories for a stylish and functional space.</p>
           </div>
-          <div className="col-md-6 col-sm-6 col-xs-12">
-            <img className="main-image" src="/images/custom.jpg" role="presentation"/>
-          </div>
         </div>
-        <div className="col-md-12 col-sm-12 col-xs-12 container-white text-center">
+        <div className="col-md-12 col-sm-12 col-xs-12 container-off-white text-center">
           <div className="col-md-5 col-sm-5 hidden-xs">
             <h1>Benefits</h1>
             <hr/>
