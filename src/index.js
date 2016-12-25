@@ -13,6 +13,7 @@ ReactDOM.render(
     <Route path="/contact-us" component={Location}/>
     <Route path="/quote" component={Quote}/>
     <Route path="/gallery" component={Gallery}/>
+    <Route path="*" component={App}/>
   </Router>,
   document.getElementById('root')
 );
