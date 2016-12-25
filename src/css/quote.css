@@ -55,3 +55,9 @@
   padding-left: 32px;
   color: white;
 }
+
+.quote-error {
+  color: #FF5252;
+  font-weight: bolder;
+  font-size: 18px;
+}
