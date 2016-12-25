@@ -93,6 +93,12 @@ body {
   }
 }
 
+@media (max-width: 992px) {
+  .padded-container {
+    padding: 5% 2% 5% 2%;
+  }
+}
+
 .container-white {
   background: white;
   padding: 16px 5% 16px 5%;
