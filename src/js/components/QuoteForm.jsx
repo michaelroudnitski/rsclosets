@@ -104,6 +104,10 @@ export default class QuoteForm extends Component {
         {error ? <div className="quote-error">{error}</div> : ''}
         <br/>
         <button type="submit" className="btn-round btn-block">Request Quote</button>
+        <hr/>
+        <div className="text-center">
+          Or call us at <a href="tel:416-272-4854">416-272-4854</a> to schedule your quote
+        </div>
       </form>
     );
   }
