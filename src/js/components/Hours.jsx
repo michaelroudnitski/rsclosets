@@ -2,10 +2,15 @@ import React, { Component } from 'react';
 
 export default class Hours extends Component {
   render() {
+    const { showDivider } = this.props;
+    let show = true;
+    if(showDivider === false) {
+      show = showDivider;
+    }
     return (
       <div>
-        <h4><span className="glyphicon glyphicon-time"></span> Working Hours</h4>
-        <hr/>
+        <h4><span className="fa fa-clock-o"></span> Working Hours</h4>
+        {show ? <hr/> : <br/>}
         <ul className="list-unstyled">
           <li>Monday: 9AM - 5PM</li>
           <li>Tuesday: 9AM - 5PM</li>

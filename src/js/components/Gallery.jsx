@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
+import Footer from './Footer';
 import ImageGallery from 'react-image-gallery';
 
 export default class Gallery extends Component {
@@ -33,7 +34,7 @@ export default class Gallery extends Component {
         <Header/>
         <div className="container-fluid padded-container" style={{paddingBottom: '0'}}>
             <h1>Our Gallery</h1>
-            <hr/>
+            <br/>
         </div>
         <div className="container-fluid" style={{background: 'white', padding: '0', maxHeight: '500px'}}>
           <div className="col-md-4 col-sm-4 col-xs-12" style={{padding: '0px'}}>
@@ -59,6 +60,7 @@ export default class Gallery extends Component {
               lazyLoad={true}/>
           </div>
         </div>
+        <Footer/>
       </div>
     );
   }

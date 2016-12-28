@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Header from './components/Header';
 import QuoteForm from './components/QuoteForm';
+import Footer from './components/Footer';
 
 export default class App extends Component {
   render() {
@@ -53,9 +54,7 @@ export default class App extends Component {
             <QuoteForm/>
           </div>
         </div>
-        <div className="col-md-12 col-sm-12 col-xs-12 padded-container">
-          <a className="btn btn-round btn-block" onClick={e => window.scrollTo(0,0)}>Back to top <span className="glyphicon glyphicon-menu-up"></span></a>
-        </div>
+        <Footer/>
       </div>
     );
   }

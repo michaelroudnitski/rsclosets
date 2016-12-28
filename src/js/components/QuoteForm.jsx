@@ -103,7 +103,7 @@ export default class QuoteForm extends Component {
         <input type="text" name="_gotcha" style={{display: 'none'}}/>
         {error ? <div className="quote-error">{error}</div> : ''}
         <br/>
-        <button type="submit" className="btn-round pull-right">Request Quote</button>
+        <button type="submit" className="btn-round btn-block">Request Quote</button>
       </form>
     );
   }

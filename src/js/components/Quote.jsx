@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from './Header';
+import Footer from './Footer';
 import QuoteForm from './QuoteForm';
 import '../../css/quote.css';
 
@@ -19,6 +20,7 @@ export default class Quote extends Component {
             <QuoteForm/>
           </div>
         </div>
+        <Footer/>
       </div>
     );
   }

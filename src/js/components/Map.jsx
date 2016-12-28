@@ -9,7 +9,7 @@ export default class Map extends Component {
         if(document.querySelector('iframe').contentDocument) { return; }
       } catch(ex) {
         clearInterval(this.checkInterval);
-        setTimeout(() => this.setState({ frameLoaded: true }), 250);
+        this.setState({ frameLoaded: true });
       }
     }, 150);
   }
@@ -18,7 +18,7 @@ export default class Map extends Component {
     const { frameLoaded } = this.state;
     const { location } = this.props;
     const loadingContent = (
-      <div className="text-center" style={{paddingTop: '38%', height: '700px', background: 'white'}}>
+      <div className="text-center" style={{paddingTop: '38%', height: '700px', background: '#eee'}}>
         <span className="glyphicon glyphicon-refresh loading"></span>
         <h2 style={{color: '#212121'}}><strong>LOADING MAP...</strong></h2>
       </div>
