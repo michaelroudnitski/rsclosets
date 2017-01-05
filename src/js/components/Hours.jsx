@@ -19,8 +19,6 @@ export default class Hours extends Component {
           <li>Friday: 9AM - 5PM</li>
           <li>Saturday: 10AM - 2PM</li>
           <li>Sunday: CLOSED</li>
-          <li><br/></li>
-          <li><strong>CLOSED DEC 25 - JAN 3</strong></li>
         </ul>
       </div>
     );
