@@ -8,7 +8,7 @@ import Gallery from './js/components/Gallery';
 import './css/common.css';
 
 ReactDOM.render(
-  <Router history={browserHistory}>
+  <Router onUpdate={() => window.scrollTo(0,0)} history={browserHistory}>
     <Route path="/" component={App}/>
     <Route path="/contact-us" component={Location}/>
     <Route path="/quote" component={Quote}/>
