@@ -157,6 +157,14 @@ html body {
   transform: translateX(-50%);
 }
 
+@media(max-width: 768px) {
+  .image-gallery-image img {
+    height: 75%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .image-gallery-left-nav:hover::before,
 .image-gallery-right-nav:hover::before {
   color: #5D4037;
