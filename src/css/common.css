@@ -157,6 +157,11 @@ html body {
   transform: translateX(-50%);
 }
 
+.image-gallery-left-nav:hover::before,
+.image-gallery-right-nav:hover::before {
+  color: #5D4037;
+}
+
 .form-group {
   text-align: left;
 }
