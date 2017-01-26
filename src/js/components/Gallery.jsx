@@ -25,6 +25,7 @@ export default class Gallery extends Component {
 
   changeCategory(index) {
     this.setState({ currentCategoryIndex: index });
+    this.refs.imageGallery.slideToIndex(0);
   }
 
   render() {
@@ -51,12 +52,14 @@ export default class Gallery extends Component {
           </div>
           <div className="col-md-8 col-sm-8 col-xs-12" style={{margin: '0px', background: '#eee'}}>
             <ImageGallery items={images[Object.keys(images)[currentCategoryIndex]]}
+              ref="imageGallery"
               infinite={true}
               showPlayButton={false}
               showFullscreenButton={false}
-              slideInterval={500}
+              slideInterval={750}
               showThumbnails={false}
-              showBullets={true}
+              showBullets={false}
+              showIndex={true}
               lazyLoad={true}/>
           </div>
         </div>
