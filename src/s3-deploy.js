@@ -25,13 +25,13 @@ function uploadFile(key, body, contentType) {
 
 const index = fs.readFileSync(__dirname + '/../build/index.html');
 const assetManifest = fs.readFileSync(__dirname + '/../build/asset-manifest.json');
-uploadFile('index.html', index, 'HTML');
-uploadFile('asset-manifest.json', assetManifest, 'JSON');
+uploadFile('index.html', index, 'text/html');
+uploadFile('asset-manifest.json', assetManifest, 'text/json');
 
 fs.readdir(__dirname + '/../build/static/js', (err, files) => {
   files.forEach(file => {
     const body = fs.readFileSync(__dirname + '/../build/static/js/' + file);
-    uploadFile(`static/js/${file}`, body, 'application/x-javascript');
+    uploadFile(`static/js/${file}`, body, 'application/javascript');
   });
 });
 
