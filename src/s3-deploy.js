@@ -13,7 +13,7 @@ function uploadFile(key, body, contentType) {
     Key: key,
     Body: body,
     ContentType: contentType,
-    CacheControl: config.CacheControl
+    CacheControl: `max-age=${config.CacheControl}`
   }, (err, data) => {
     if(err) {
       console.log(`error uploading key ${key}`, err);
