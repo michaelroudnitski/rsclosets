@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Hours from './Hours';
-import StaticMap from './StaticMap';
+import StaticMap from '../contact/StaticMap';
 import CopyrightInfo from './CopyrightInfo';
 
 export default class Footer extends Component {

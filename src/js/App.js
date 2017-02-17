@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import Header from './components/Header';
-import QuoteForm from './components/QuoteForm';
-import Footer from './components/Footer';
+import Header from './components/common/Header';
+import QuoteForm from './components/quote/QuoteForm';
+import Footer from './components/common/Footer';
 
 export default class App extends Component {
   render() {

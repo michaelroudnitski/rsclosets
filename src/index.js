@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory } from 'react-router';
 import App from './js/App';
-import Quote from './js/components/Quote';
-import Location from './js/components/Location';
-import Gallery from './js/components/Gallery';
+import Quote from './js/components/quote/Quote';
+import Location from './js/components/contact/Location';
+import Gallery from './js/components/gallery/Gallery';
 import './css/common.css';
 
 ReactDOM.render(

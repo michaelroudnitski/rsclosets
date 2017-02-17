@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Header from './Header';
+import Header from '../common/Header';
 import Map from './Map';
-import IconText from './IconText';
-import Hours from './Hours';
-import CopyrightInfo from './CopyrightInfo';
-import '../../css/location.css';
+import IconText from '../common/IconText';
+import Hours from '../common/Hours';
+import CopyrightInfo from '../common/CopyrightInfo';
+import '../../../css/location.css';
 
 export default class Location extends Component {
   render() {

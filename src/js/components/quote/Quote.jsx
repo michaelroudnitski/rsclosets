@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Header from './Header';
-import Footer from './Footer';
+import Header from '../common/Header';
+import Footer from '../common/Footer';
 import QuoteForm from './QuoteForm';
-import '../../css/quote.css';
+import '../../../css/quote.css';
 
 export default class Quote extends Component {
   render() {

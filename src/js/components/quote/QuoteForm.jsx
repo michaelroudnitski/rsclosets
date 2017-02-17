@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import QuoteStore from '../QuoteStore';
+import QuoteStore from '../../QuoteStore';
 
 export default class QuoteForm extends Component {
   constructor(props) {

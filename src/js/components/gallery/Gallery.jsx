@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import Footer from './Footer';
+import Header from '../common/Header';
+import Footer from '../common/Footer';
 import ImageGallery from 'react-image-gallery';
 
 export default class Gallery extends Component {

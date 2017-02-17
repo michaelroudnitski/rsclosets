@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { GOOGLE_MAPS_KEY } from '../secret.js';
+import { GOOGLE_MAPS_KEY } from '../../secret.js';
 
 export default class Map extends Component {
   componentWillMount() {
