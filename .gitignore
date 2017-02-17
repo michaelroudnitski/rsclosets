@@ -16,3 +16,6 @@ npm-debug.log
 
 # public facing folders
 public
+
+# keys
+secret.js
