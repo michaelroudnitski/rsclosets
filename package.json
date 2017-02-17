@@ -1,6 +1,6 @@
 {
-  "name": "ClosetSite",
-  "version": "0.1.0",
+  "name": "rsclosets.ca",
+  "version": "1.0.0",
   "private": true,
   "devDependencies": {
     "aws-sdk": "^2.7.19",
