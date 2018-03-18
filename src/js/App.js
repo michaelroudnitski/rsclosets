@@ -30,7 +30,7 @@ export default class App extends Component {
           <div className="col-md-6 col-sm-6 col-xs-12 fadeIn-med">
             <h3>The Classic Closet</h3>
             <hr/>
-            <p>The Classic closet is the perfect choice for walk-in or reach-in closets. We offer a variety of options: deep drawers, deep shelves and hanging rods. In addition, we offer a variety of style options.</p>
+            <p>The Classic closet is the perfect choice for walk-in or reach-in closets. We offer a variety of options: deep drawers, deep shelves and hanging rods.</p>
             <img className="main-image" src="/images/classic.jpg" role="presentation"/>
           </div>
           <div className="col-md-6 col-sm-6 col-xs-12 fadeIn-med">

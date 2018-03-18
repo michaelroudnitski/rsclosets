@@ -49,7 +49,7 @@
 
 .estimate-container {
   background-color: #795548;
-  background-image: url("../../public/estimatebackground.jpg");
+  background-image: url("/images/estimatebackground.jpg");
   background-size: cover;
   width: 100%;
   height: 550px;
