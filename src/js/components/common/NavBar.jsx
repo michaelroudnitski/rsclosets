@@ -6,7 +6,7 @@ export default class NavBar extends Component {
     const { pathname } = window.location;
     return (
       <nav className='nav'>
-        <Link className={pathname === '/' ? 'nav-brand active' : 'nav-brand'} to='/'>RS</Link>
+        <Link className={pathname === '/' ? 'nav-brand active' : 'nav-brand'} to='/'><strong>RS</strong></Link>
         <div className='nav-right'>
           <Link className={pathname === '/gallery' ? 'active' : ''} to='/gallery'>Gallery</Link>
           <Link className={pathname === '/quote' ? 'active' : ''} to='/quote'>Quote</Link>

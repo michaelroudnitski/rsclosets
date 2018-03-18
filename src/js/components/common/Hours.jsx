@@ -13,14 +13,10 @@ export default class Hours extends Component {
         <small>Please call and arrange an appointment before visiting.</small>
         <br/>
         {show ? <hr/> : <br/>}
-        <ul className="list-unstyled">
-          <li>Monday: 9AM - 5PM</li>
-          <li>Tuesday: 9AM - 5PM</li>
-          <li>Wednesday: 9AM - 5PM</li>
-          <li>Thursday: 9AM - 5PM</li>
-          <li>Friday: 9AM - 5PM</li>
-          <li>Saturday: 10AM - 2PM</li>
-          <li>Sunday: CLOSED</li>
+        <ul>
+          <li>Mon-Fri: 9AM - 5PM</li>
+          <li>Sat: 10AM - 2PM</li>
+          <li>Sun: CLOSED</li>
         </ul>
       </div>
     );

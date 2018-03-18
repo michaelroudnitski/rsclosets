@@ -86,15 +86,16 @@ export default class QuoteForm extends Component {
     }
     return (
       <form className="quote-form" onSubmit={this.submit.bind(this)}>
-        <h1><span className="glyphicon glyphicon-usd"></span> Request a Quote</h1>
+        <h1>Request a Quote</h1>
+        <p>Fill out the form with your details and<br/>we'll reach out to you as soon as possible.</p>
         <hr/>
         <div className="form-group">
           <label htmlFor="emailInput">Email Address</label>
           <input type="email" className="form-control" id="emailInput" name="email" placeholder="email"/>
         </div>
         <div className="form-group">
-          <label htmlFor="nameInput">Full Name</label>
-          <input type="text" className="form-control" id="nameInput" name="fullName" placeholder="full name"/>
+          <label htmlFor="nameInput">Name</label>
+          <input type="text" className="form-control" id="nameInput" name="fullName" placeholder="name"/>
         </div>
         <div className="form-group">
           <label htmlFor="phoneInput">Phone Number</label>
@@ -104,10 +105,10 @@ export default class QuoteForm extends Component {
         {error ? <div className="quote-error">{error}</div> : ''}
         <br/>
         <button type="submit" className="btn-round btn-block">Request Quote</button>
-        <hr/>
         <div className="text-center">
-          Or call us at <a href="tel:416-272-4854">416-272-4854</a> to schedule your quote
+          <h4>Or call us at <a href="tel:416-272-4854">416-272-4854</a></h4>
         </div>
+        <hr/>
       </form>
     );
   }

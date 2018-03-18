@@ -18,4 +18,4 @@ npm-debug.log
 public
 
 # keys
-secret.js
+src/js/secret.js

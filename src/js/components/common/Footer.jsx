@@ -9,7 +9,7 @@ export default class Footer extends Component {
     return (
       <div>
         <div className="container-fluid padded-container">
-          <div className="col-md-8 col-sm-8 col-xs-12" style={{paddingTop: '5%'}}>
+          <div className="col-md-4 col-sm-4 col-xs-12" style={{paddingTop: '5%'}}>
             <h3>Contact Us</h3>
             <br/>
             <StaticMap/>
@@ -22,7 +22,10 @@ export default class Footer extends Component {
             </address>
             <Link to="/contact-us">More Contact Details</Link>
           </div>
-          <div className="col-md-4 col-sm-4 hidden-xs" style={{paddingTop: '12%'}}>
+          <div className="col-md-4 col-sm-4 hidden-xs" style={{paddingTop: '5%'}}>
+            <h1><strong>RS</strong></h1>
+          </div>
+          <div className="col-md-4 col-sm-4 hidden-xs" style={{paddingTop: '5%'}}>
             <Hours/>
           </div>
         </div>

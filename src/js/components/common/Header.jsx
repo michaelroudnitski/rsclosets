@@ -6,7 +6,6 @@ export default class Header extends Component {
     return (
       <div>
         <NavBar/>
-        <img className="banner" src="/images/banner.png" role="presentation"/>
       </div>
     );
   }

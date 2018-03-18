@@ -13,7 +13,7 @@ export default class Location extends Component {
     return (
       <div className="container">
         <Header/>
-        <div className="padded-container location-info hidden-xs">
+        <div className="padded-container location-info hidden-xs fadeIn-long">
           <h1>Contact Us - RS Closet Organizers</h1>
           <hr/>
           <div className="col-md-6 col-sm-6">
@@ -62,7 +62,7 @@ export default class Location extends Component {
           </IconText>
         </div>
         <div className="location-map">
-          <Map location="191 Bowes Road Unit 3 and 4 Concord ON L4K 1H9"/>
+          <Map location="191 Bowes Road Concord ON L4K 1H9"/>
         </div>
         <CopyrightInfo/>
       </div>

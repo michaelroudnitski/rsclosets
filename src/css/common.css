@@ -1,25 +1,27 @@
 @import "../../node_modules/react-image-gallery/styles/css/image-gallery.css";
 
+html {
+  overflow-y: scroll;
+}
+
 html body {
-  font-family: 'PT Sans', sans-serif;
-  background: #ddd;
+  font-family: 'Montserrat', sans-serif;
+  background: #EBEDEF;
 }
 
 .nav {
   position: relative;
   margin: 0px;
-  background: white;
-  color: black;
+  background: #FDFEFE;
+  color: white;
   font-size: 14px;
   padding: 16px;
   font-weight: lighter;
 }
 
 .nav a {
-  color: black;
+  color: #5D4037;
   padding: 16px;
-  transition: all 200ms ease-in-out;
-  border-right: 1px solid #eee;
 }
 
 .nav a:last-child {
@@ -28,8 +30,8 @@ html body {
 
 .nav a:hover {
   text-decoration: none;
-  color: gray;
-  border-bottom: 3px solid #795548;
+  color: #5D4037;
+  border-bottom: 3px solid #28B463;
 }
 
 .nav .nav-brand {
@@ -45,13 +47,13 @@ html body {
 }
 
 .nav a.active {
-  color: gray;
-  border-bottom: 3px solid #795548;
+  color: #5D4037;
+  border-bottom: 3px solid #28B463;
 }
 
 .padded-container {
-  padding: 5% 15% 5% 15%;
-  background: white;
+  padding: 3% 15% 3% 15%;
+  background: #F8F8F8;
   text-align: center;
 }
 
@@ -72,6 +74,14 @@ html body {
   font-weight: lighter;
 }
 
+a {
+  color: #28B463;
+}
+
+a:hover {
+  color: #239B56;
+}
+
 .padded-container .main-image {
   margin: auto;
   width: auto;
@@ -81,7 +91,7 @@ html body {
 @media (max-width: 768px) {
   .container {
     margin: 0px;
-    padding: 0px;
+    padding: 0% 0% 5% 0%;
   }
   .padded-container {
     padding: 5%;
@@ -127,20 +137,48 @@ html body {
   animation: spin 1.5s infinite linear;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn-short {
+  animation: fadeIn 0.2s linear;
+}
+
+.fadeIn-med {
+  animation: fadeIn 0.3s linear;
+}
+
+.fadeIn-long {
+  animation: fadeIn 0.4s linear;
+}
+
 .btn-round {
-  border: none;
-  border-radius: 32px;
-  color: white;
-  font-size: 12px;
+  border: solid;
+  border-radius: 8px;
+  color: #5D4037;
+  font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
   padding: 12px 16px 12px 16px;
-  background: #795548;
+  background: none;
+}
+
+@media (max-width: 768px) {
+  .btn-round {
+    font-size: 12px;
+  }
 }
 
 .btn-round:hover {
   text-decoration: none;
-  color: white;
+  color: #28B463;
   opacity: 0.75;
 }
 
@@ -200,4 +238,9 @@ html body {
 .gallery-item:hover {
   background: rgba(253, 253, 253, 0.95);
   cursor: pointer;
+}
+
+ul {
+  padding-left: 0px;
+  list-style: none;
 }

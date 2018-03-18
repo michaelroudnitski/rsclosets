@@ -33,11 +33,11 @@ export default class Gallery extends Component {
     return (
       <div className="container">
         <Header/>
-        <div className="container-fluid padded-container" style={{paddingBottom: '0'}}>
+        <div className="container-fluid padded-container fadeIn-short" style={{paddingBottom: '0'}}>
             <h1>Our Gallery</h1>
             <br/>
         </div>
-        <div className="container-fluid" style={{background: 'white', padding: '0', maxHeight: '500px'}}>
+        <div className="container-fluid fadeIn-long" style={{background: 'white', padding: '0', maxHeight: '500px'}}>
           <div className="col-md-4 col-sm-4 col-xs-12" style={{padding: '0px'}}>
               <div className="hidden-xs">
                 {Object.keys(images).map((folder,index) =>
@@ -50,7 +50,7 @@ export default class Gallery extends Component {
                 </select>
               </div>
           </div>
-          <div className="col-md-8 col-sm-8 col-xs-12" style={{margin: '0px', background: '#eee'}}>
+          <div className="col-md-8 col-sm-8 col-xs-12">
             <ImageGallery items={images[Object.keys(images)[currentCategoryIndex]]}
               ref="imageGallery"
               infinite={true}
