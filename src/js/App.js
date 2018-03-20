@@ -40,7 +40,7 @@ export default class App extends Component {
             <img className="main-image" src="/images/custom.jpg" role="presentation"/>
           </div>
         </div>
-        <div className="col-md-12 col-sm-12 col-xs-12 container-fluid text-center">
+        <div className="col-md-12 col-sm-12 col-xs-12 container-fluid padded-container text-center">
           <div className="col-md-12 col-sm-12 col-xs-12 fadeIn-long">
             <QuoteForm/>
           </div>

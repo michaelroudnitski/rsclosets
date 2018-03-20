@@ -9,7 +9,7 @@ export default class Hours extends Component {
     }
     return (
       <div>
-        <h4><span className="fa fa-clock-o"></span> Working Hours</h4>
+        <h3><span className="fa fa-clock-o"></span> Working Hours</h3>
         <small>Please call and arrange an appointment before visiting.</small>
         <br/>
         {show ? <hr/> : <br/>}
